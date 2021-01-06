@@ -11,6 +11,7 @@ Devido à grande quantidade de erros ao ler as tabelas do pdf (possivelmente dev
 Próximos passos:
 1. Converter os dados em float para int
 2. Obter automaticamente as coordenadas de tabelas no pdf para usar como argumento na leitura
+3. Obter automaticamente a quantidade de arquivos a serem zipados e seus nomes
 
 Referências:
 https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.drop.html

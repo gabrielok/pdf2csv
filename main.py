@@ -72,7 +72,6 @@ def append_dfs(df1, df2):
 q30 = tabula.read_pdf(filename, pages = 79, area = [16, 22, 26, 58], relative_area = True, silent = True, stream = True)
 print('QUADRO 30')
 print(q30[0])
-
 with open('q30.csv', 'w') as f:
     writecsv(f, q30[0])
 
@@ -106,4 +105,8 @@ with open('q32.csv', 'w') as f:
     writecsv(f, q32[0])
 
 # Zip dos arquivos
-filename = 'Teste_Intuitive_Care_Gabriel_Okamoto'
+filename = 'Teste_Intuitive_Care_Gabriel_Okamoto.zip'
+with zipfile.ZipFile(filename, 'w') as file:
+    file.write('q30.csv')
+    file.write('q31.csv')
+    file.write('q32.csv')
